@@ -1,0 +1,81 @@
+2018-11-07 17:08:28,826 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/access'
+2018-11-07 17:08:28,829 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.1.12 on BLR-STR-ANMOL with PID 29736 (/home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/tomcat/webapps/access/WEB-INF/lib/access-application-4.1.12.jar started by anmol in /home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/bin)
+2018-11-07 17:08:28,829 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2018-11-07 17:08:34,874 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:134) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2018-11-07 17:08:34,875 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:137) - Connection URL: jdbc:derby:/home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/data/derby
+2018-11-07 17:08:35,069 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:146) - ***Creating database schema***
+2018-11-07 17:08:38,036 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:162) - Setting new schema baseline to latest version: 3.8
+2018-11-07 17:08:38,608 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:114) - Configuration data wasn't found in db. Loading defaults
+2018-11-07 17:08:38,998 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:56) - No master.key was supplied (system prop or file), attempting to generate new master.key
+2018-11-07 17:08:39,028 [localhost-startStop-1] [INFO ] (o.j.a.m.ConfigMigrationRunner:73) - Current version of access.properties is 1, latest version is 2. Applying migrations.
+2018-11-07 17:08:39,028 [localhost-startStop-1] [INFO ] (o.j.a.m.ConfigMigrationRunner:73) - Migrating access.properties to version 2
+2018-11-07 17:08:39,030 [localhost-startStop-1] [INFO ] (o.j.a.s.s.AccessStartupUtil:44) - [ACCESS BOOTSTRAP] Server name not found in access properties. Setting value to 829044d6-522f-4018-9aa4-730c334e423b
+2018-11-07 17:08:39,365 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2018-11-07 17:08:39,392 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2018-11-07 17:08:39,701 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2018-11-07 17:08:39,704 [localhost-startStop-1] [INFO ] (o.j.a.s.s.CertificateServiceImpl:406) - [ACCESS BOOTSTRAP] Generating private key and root certificate
+2018-11-07 17:08:40,090 [localhost-startStop-1] [INFO ] (o.j.a.s.m.CertificateMigrationImpl:71) - [Certificate Migration] Recreating root certificate to match current certificate version
+2018-11-07 17:08:40,092 [localhost-startStop-1] [INFO ] (o.j.a.s.m.CertificateMigrationImpl:93) - [Certificate Migration] Creating root certificate for version: null
+2018-11-07 17:08:40,303 [localhost-startStop-1] [INFO ] (o.j.a.s.m.CertificateMigrationImpl:82) - [Certificate Migration] Saved new root certificate in: /home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/access/etc/keys/root.crt
+2018-11-07 17:08:40,655 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '829044d6-522f-4018-9aa4-730c334e423b' private key finger print to: f28bca34944c47948b7fc7596a2e5e9c553c9b8a7f7c955e6d79c0e7e21bccd5
+2018-11-07 17:08:40,746 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:331) - [ACCESS BOOTSTRAP] No admin user exists - generating an admin user, credentials will be saved to: /home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/access/etc/generated.creds
+2018-11-07 17:08:40,871 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:373) - [ACCESS BOOTSTRAP] Writing updated credentials to the bundling Artifactory: /home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/etc/security/access/bootstrap.creds
+2018-11-07 17:08:40,875 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:302) - [ACCESS BOOTSTRAP] Creating default access admin permission 'jfac@01cvpzeytfz9y10xfz9p361csy-admin'
+2018-11-07 17:08:40,897 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:324) - [ACCESS BOOTSTRAP] Assigning user 'access-admin' to admin permission 'jfac@01cvpzeytfz9y10xfz9p361csy-admin'.
+2018-11-07 17:08:40,933 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2018-11-07 17:08:43,064 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2018-11-07 17:08:45,876 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 18.114 seconds (JVM running for 19.499)
+2018-11-07 17:08:53,357 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting groups...
+2018-11-07 17:08:53,371 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_events...
+2018-11-07 17:08:53,378 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting tokens...
+2018-11-07 17:08:53,383 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_servers...
+2018-11-07 17:08:53,398 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting permissions...
+2018-11-07 17:08:53,406 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting servers...
+2018-11-07 17:08:53,409 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting users...
+2018-11-07 17:08:53,425 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting config...
+2018-11-07 17:08:53,434 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting encryption...
+2018-11-07 17:08:53,434 [http-nio-8040-exec-8] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting home...
+2018-11-07 17:08:53,746 [http-nio-8040-exec-10] [ERROR] (o.j.a.s.a.s.p.SecurityPermissionEventLogProvider:95) - Could not audit custom data for add customData
+2018-11-07 17:08:53,776 [http-nio-8040-exec-2] [ERROR] (o.j.a.s.a.s.p.SecurityPermissionEventLogProvider:95) - Could not audit custom data for add customData
+2018-11-07 17:14:33,959 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/access'
+2018-11-07 17:14:33,963 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.1.12 on BLR-STR-ANMOL with PID 30541 (/home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/tomcat/webapps/access/WEB-INF/lib/access-application-4.1.12.jar started by anmol in /home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/bin)
+2018-11-07 17:14:33,963 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2018-11-07 17:14:37,605 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:134) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2018-11-07 17:14:37,606 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:137) - Connection URL: jdbc:derby:/home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/data/derby
+2018-11-07 17:14:38,166 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:117) - Loading configuration from db finished successfully
+2018-11-07 17:14:38,587 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:52) - Found master.key file at /home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/etc/security/master.key, using it as master.key
+2018-11-07 17:14:38,777 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2018-11-07 17:14:38,796 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2018-11-07 17:14:39,092 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2018-11-07 17:14:39,448 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '829044d6-522f-4018-9aa4-730c334e423b' private key finger print to: f28bca34944c47948b7fc7596a2e5e9c553c9b8a7f7c955e6d79c0e7e21bccd5
+2018-11-07 17:14:39,565 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2018-11-07 17:14:41,377 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2018-11-07 17:14:43,890 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 11.007 seconds (JVM running for 12.15)
+2018-11-07 17:16:35,398 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/access'
+2018-11-07 17:16:35,402 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.1.12 on BLR-STR-ANMOL with PID 30828 (/home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/tomcat/webapps/access/WEB-INF/lib/access-application-4.1.12.jar started by anmol in /home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/bin)
+2018-11-07 17:16:35,403 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2018-11-07 17:16:39,325 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:134) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2018-11-07 17:16:39,326 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:137) - Connection URL: jdbc:derby:/home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/data/derby
+2018-11-07 17:16:39,942 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:117) - Loading configuration from db finished successfully
+2018-11-07 17:16:40,467 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:52) - Found master.key file at /home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/etc/security/master.key, using it as master.key
+2018-11-07 17:16:40,703 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2018-11-07 17:16:40,721 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2018-11-07 17:16:41,124 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2018-11-07 17:16:41,559 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '829044d6-522f-4018-9aa4-730c334e423b' private key finger print to: f28bca34944c47948b7fc7596a2e5e9c553c9b8a7f7c955e6d79c0e7e21bccd5
+2018-11-07 17:16:41,657 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2018-11-07 17:16:43,162 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2018-11-07 17:16:45,725 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 11.726 seconds (JVM running for 12.917)
+2018-11-07 17:18:42,765 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/access'
+2018-11-07 17:18:42,771 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.1.12 on BLR-STR-ANMOL with PID 31228 (/home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/tomcat/webapps/access/WEB-INF/lib/access-application-4.1.12.jar started by anmol in /home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/bin)
+2018-11-07 17:18:42,771 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2018-11-07 17:18:47,029 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:134) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2018-11-07 17:18:47,030 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:137) - Connection URL: jdbc:derby:/home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/data/derby
+2018-11-07 17:18:47,729 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:117) - Loading configuration from db finished successfully
+2018-11-07 17:18:48,192 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:52) - Found master.key file at /home/anmol/Documents/githubRepository/CiCddemo/jfrog-artifactory-oss-6.5.2/artifactory-oss-6.5.2/etc/security/master.key, using it as master.key
+2018-11-07 17:18:48,511 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2018-11-07 17:18:48,543 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2018-11-07 17:18:48,909 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2018-11-07 17:18:49,250 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server '829044d6-522f-4018-9aa4-730c334e423b' private key finger print to: f28bca34944c47948b7fc7596a2e5e9c553c9b8a7f7c955e6d79c0e7e21bccd5
+2018-11-07 17:18:49,399 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2018-11-07 17:18:51,651 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2018-11-07 17:18:54,558 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 13.045 seconds (JVM running for 14.405)
